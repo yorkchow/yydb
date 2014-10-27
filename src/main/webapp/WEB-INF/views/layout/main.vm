@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>$!page_title</title>
+    #parse('/layout/meta.vm')
+</head>
+<body>
+<article>
+    <header>#parse('/layout/header.vm')</header>
+    <section>$!content</section>
+    <footer>#parse('/layout/footer.vm')</footer>
+</article>
+</body>
+</html>
