@@ -20,7 +20,10 @@
     <mvc:resources mapping="/html/**" location="/html/"/>
      <mvc:resources mapping="/template/**" location="/template/"/>
      -->
-    <context:component-scan base-package="com.yydb" />
+    <!-- 加载非web层组件 -->
+    <context:component-scan base-package="com.yydb">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
 
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
