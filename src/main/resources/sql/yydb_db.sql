@@ -35,8 +35,9 @@ create table `yydb_user`(
   `parent_id` int(10) UNSIGNED NOT NULL DEFAULT 0,
   `mobile_phone` varchar(20) NOT NULL DEFAULT '',
   `is_validated` tinyint(1) UNSIGNED NOT NULL DEFAULT 0,
+  `address_id` int(10) UNSIGNED NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT = 1000000000;
 
 -- ----------------------------------
 -- Table structure for yydb_user_rank

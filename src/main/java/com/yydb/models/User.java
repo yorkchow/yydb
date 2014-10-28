@@ -45,6 +45,8 @@ public class User implements Serializable {
 
     private boolean isValidated;
 
+    private UserAddress userAddress;
+
     private List<UserAddress> userAddresses;
 
     public int getId() {
@@ -159,12 +161,20 @@ public class User implements Serializable {
         this.mobilePhone = mobilePhone;
     }
 
-    public boolean getIsValidated() {
+    public boolean isValidated() {
         return isValidated;
     }
 
-    public void setIsValidated(boolean isValidated) {
+    public void setValidated(boolean isValidated) {
         this.isValidated = isValidated;
+    }
+
+    public UserAddress getUserAddress() {
+        return userAddress;
+    }
+
+    public void setUserAddress(UserAddress userAddress) {
+        this.userAddress = userAddress;
     }
 
     public List<UserAddress> getUserAddresses() {

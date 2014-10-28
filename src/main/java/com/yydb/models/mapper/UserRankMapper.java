@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Service;
 
 /**
- * Mapper UserRankMapper
+ * UserRankMapper用户等级DAO
  *
  * @author: York Chow<york.chow@actionsky.com>
  * @since: 2014/10/28

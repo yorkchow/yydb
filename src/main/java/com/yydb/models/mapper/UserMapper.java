@@ -1,5 +1,6 @@
 package com.yydb.models.mapper;
 
+import com.yydb.models.UserAddress;
 import com.yydb.models.UserRank;
 import com.yydb.models.User;
 import org.apache.ibatis.annotations.*;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * Mapper UserMapper
+ * UserMapper用户DAO
  *
  * @author: York Chow<york.chow@actionsky.com>
  * @since: 2014/10/28
@@ -35,8 +36,11 @@ public interface UserMapper {
             @Result(property = "isValidated", column = "is_validated"),
             @Result(property = "rank", column = "rank_id", javaType = UserRank.class,
                     one = @One(select = "com.yydb.models.mapper.UserRankMapper.getById")),
+            @Result(property = "userAddress", column = "address_id", javaType = UserAddress.class,
+                    one = @One(select = "com.yydb.models.mapper.UserAddressMapper.getById")),
             @Result(property = "userAddresses", column = "id", javaType = List.class,
                     many = @Many(select = "com.yydb.models.mapper.UserAddressMapper.getByUserId"))
     })
     User getById(@Param("userId") int userId);
+
 }
