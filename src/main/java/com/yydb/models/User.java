@@ -41,7 +41,7 @@ public class User implements Serializable {
 
     private int parentId;
 
-    private String mobilePhone;
+    private String mobile;
 
     private boolean isValidated;
 
@@ -153,12 +153,12 @@ public class User implements Serializable {
         this.parentId = parentId;
     }
 
-    public String getMobilePhone() {
-        return mobilePhone;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setMobilePhone(String mobilePhone) {
-        this.mobilePhone = mobilePhone;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public boolean isValidated() {

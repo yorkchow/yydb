@@ -32,7 +32,7 @@ public interface UserMapper {
             @Result(property = "lastIp", column = "last_ip"),
             @Result(property = "visitCount", column = "visit_count"),
             @Result(property = "parentId", column = "parent_id"),
-            @Result(property = "mobilePhone", column = "mobile_phone"),
+            @Result(property = "mobile", column = "mobile"),
             @Result(property = "isValidated", column = "is_validated"),
             @Result(property = "rank", column = "rank_id", javaType = UserRank.class,
                     one = @One(select = "com.yydb.models.mapper.UserRankMapper.getById")),

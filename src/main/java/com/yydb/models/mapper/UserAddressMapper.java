@@ -29,7 +29,7 @@ public interface UserAddressMapper {
             @Result(property = "address", column = "address"),
             @Result(property = "zipcode", column = "zipcode"),
             @Result(property = "tel", column = "tel"),
-            @Result(property = "mobilePhone", column = "mobilePhone"),
+            @Result(property = "mobile", column = "mobile"),
             @Result(property = "bestTime", column = "bestTime"),
             @Result(property = "user", column = "user_id", javaType = User.class,
                     one = @One(select = "com.yydb.models.mapper.UserMapper.getById"))
@@ -48,7 +48,7 @@ public interface UserAddressMapper {
             @Result(property = "address", column = "address"),
             @Result(property = "zipcode", column = "zipcode"),
             @Result(property = "tel", column = "tel"),
-            @Result(property = "mobilePhone", column = "mobilePhone"),
+            @Result(property = "mobile", column = "mobile"),
             @Result(property = "bestTime", column = "bestTime"),
             @Result(property = "user", column = "user_id", javaType = User.class,
                     one = @One(select = "com.yydb.models.mapper.UserMapper.getById"))

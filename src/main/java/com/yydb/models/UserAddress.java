@@ -36,7 +36,7 @@ public class UserAddress implements Serializable {
 
     private String tel;
 
-    private String mobilePhone;
+    private String mobile;
 
     private String bestTime;
 
@@ -128,12 +128,12 @@ public class UserAddress implements Serializable {
         this.tel = tel;
     }
 
-    public String getMobilePhone() {
-        return mobilePhone;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setMobilePhone(String mobilePhone) {
-        this.mobilePhone = mobilePhone;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public String getBestTime() {
