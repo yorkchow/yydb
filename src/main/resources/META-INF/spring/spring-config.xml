@@ -12,6 +12,11 @@
 
     <context:property-placeholder location="classpath:config.properties" />
 
+    <!-- 扫描注解Bean -->
+    <context:component-scan base-package="com.yydb.**.service,com.yydb.**.task,com.yydb.**.extra">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
     <!-- DataSource -->
     <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">

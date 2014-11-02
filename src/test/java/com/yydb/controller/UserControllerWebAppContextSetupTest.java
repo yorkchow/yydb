@@ -21,7 +21,7 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration(value = "src/main/webapp")
 @ContextHierarchy({
-        @ContextConfiguration(name = "parent", locations = "classpath:META-INF/spring/beans-common.xml"),
+        @ContextConfiguration(name = "parent", locations = "classpath:META-INF/spring/spring-common.xml"),
         @ContextConfiguration(name = "child", locations = "classpath:META-INF/spring/springmvc-servlet.xml")
 })
 public class UserControllerWebAppContextSetupTest {
