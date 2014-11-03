@@ -26,7 +26,7 @@ public class UserRealm extends AuthorizingRealm {
     @Autowired
     private UserAuthService userAuthService;
 
-    private static final Logger log = LoggerFactory.getLogger("es-error");
+    private static final Logger log = LoggerFactory.getLogger("yydb-error");
 
     @Autowired
     public UserRealm(ApplicationContext ctx) {
